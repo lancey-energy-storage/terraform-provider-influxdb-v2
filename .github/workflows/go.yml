@@ -25,9 +25,6 @@ jobs:
       - name: Download influxdbv2-onboarding provider
         run: 'wget -qO- https://github.com/lancey-energy-storage/terraform-provider-influxdb-v2-onboarding/releases/download/v0.2.0/terraform-provider-influxdbv2-onboarding_v0.2.0-v0.2.0-linux-amd64.tar.gz | tar -xvz -C ./examples/terraform.d/plugins/linux_amd64/'
 
-      - name: Downloading influxdbv2 provider
-        run: 'wget -qO- https://github.com/lancey-energy-storage/terraform-provider-influxdb-v2/releases/download/v0.1.0/terraform-provider-influxdbv2_v0.1.0-v0.1.0-linux-amd64.tar.gz | tar -xvz -C ./examples/terraform.d/plugins/linux_amd64/'
-
       - name: Go fmt
         run: make fmt
 
