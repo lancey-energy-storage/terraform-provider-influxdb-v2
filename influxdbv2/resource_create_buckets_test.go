@@ -73,7 +73,7 @@ resource "influxdbv2_bucket" "acctest" {
     name = "acctest" 
     org_id = "` + os.Getenv("INFLUXDB_V2_ORG_ID") + `"
     retention_rules {
-        every_seconds = 40
+        every_seconds = "40"
     }
 }
 `
@@ -86,7 +86,7 @@ resource "influxdbv2_bucket" "acctest" {
     name = "acctest" 
     org_id = "` + os.Getenv("INFLUXDB_V2_ORG_ID") + `"
     retention_rules {
-        every_seconds = 30
+        every_seconds = "30"
     }
 }
 `
